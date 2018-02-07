@@ -1,0 +1,14 @@
+.mavl-video-search-form {
+  float: right;
+  font-size: 12px;
+  padding: 0 10px 20px;
+  .mavl-input {
+    padding: 2px 10px;
+  }
+  .mavl-button {
+    background-color: $vimeo-blue;
+    border: none;
+    color: #fff;
+    padding: 4px 20px;
+  }
+}
