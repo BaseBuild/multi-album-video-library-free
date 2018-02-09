@@ -18,23 +18,6 @@ function mavl_plugin_options(){
       </td>
       </tr>
       <tr valign="top">
-      <th scope="row">Items Per Page:</th>
-      <td>
-        <select name="mavl_items_per_page">
-        <?php $item_count_options = array (1,2,3,4,5,6,7,8,9,10,11,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,90,120,150,300);
-          foreach ($item_count_options as $x): ?>
-            <option value="<?php echo $x; ?>" <?php if (get_option( 'mavl_items_per_page' ) == $x) echo ' selected' ?>><?php echo $x; ?></option>
-        <?php endforeach; ?>
-        </select><br/>
-      </td>
-      </tr>
-      <tr valign="top">
-      <th scope="row">Show Recent Videos?</th>
-      <td>
-        <input id="checkBox" type="checkbox" name="mavl_show_recent_videos" value="true" <?php if (get_option( 'mavl_show_recent_videos' ) == 'true') echo 'checked'; ?>>
-      </td>
-      </tr>
-      <tr valign="top">
       <th scope="row">Show videos of first album if there's only one album?</th>
       <td>
         <input id="checkBox" type="checkbox" name="mavl_show_first_album_videos" value="true" <?php if (get_option( 'mavl_show_first_album_videos' ) == 'true') echo 'checked'; ?>>
@@ -44,9 +27,8 @@ function mavl_plugin_options(){
     <?php submit_button(); ?>
 
     <h3>Usage Instructions: </strong></h3>
-    To display your album on page, use this shortcode: <strong><em>[multi_album_video_library]</em></strong>, <strong><em>[mavl]</em></strong></p>
-    <p>You may also use add parameters to your shortcode. Example: <strong><em>[multi_album_video_library per_page=3]</em></strong>, <strong><em>[mavl per_page=3]</em></strong></p>
-
+    <p>To display your album on page, use this shortcode: <strong><em>[multi_album_video_library]</em></strong>, <strong><em>[mavl]</em></strong></p>
+    <p>Learn more at <a href="http://www.basebuildguys.com/blog/how-to-create-an-online-video-library-with-vimeo-not-youtube/" target="_blank">http://www.basebuildguys.com/blog/how-to-create-an-online-video-library-with-vimeo-not-youtube/</a></p>
   </form>
 <?php
 

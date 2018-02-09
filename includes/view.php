@@ -103,7 +103,7 @@ if (isset($_GET['albums'])){
         
         <div class="mavl-vimeo-grid mavl-vimeo-videos-grid">
           <ul class="mavl-vimeo-list">
-          <?php $cnt = 0;
+          <?php 
             foreach($items as $item):
               $link = $item['pictures']['sizes'][2]['link'];
               $src = $link ? $link : plugin_dir_url( __FILE__ ) . '../assets/images/vimeo-album.png';
@@ -113,12 +113,21 @@ if (isset($_GET['albums'])){
               <div class="mavl-overlay">
                 <span class="text"><a href="<?php echo esc_url( mavl_generate_link($item['uri']) ); ?>"><?php echo esc_html( $video_name ); ?></a></span>
               </div>
-            </li><?php 
-            if(++$cnt >= 6) break;
-            endforeach; // foreach $items ?>
+            </li><?php endforeach; // foreach $items ?>
           
           </ul>
         </div>
+        
+        <?php if ( !(isset($options['pagination']) && $options['pagination'] == 'false') && $pages != 0): ?>
+          <div class="mavl-pagination">
+            <div class="mavl-pagination-page">Page <?php echo $page . ' of ' . $pages; ?></div>
+            <div class="mavl-previous-next">
+              <?php if ($previous) : ?><span class="mavl-previous-link"><a href="<?php echo mavl_generate_link($previous); ?>">&larr;Previous</a></span><?php endif; ?>
+              <?php if ($next) : ?><span class="mavl-next-link"><a href="<?php echo mavl_generate_link($next); ?>">Next &rarr;</a></span><?php endif; ?>
+            </div>
+          </div><!-- .mavl-pagination -->
+        <?php endif; ?>
+        
       
       <?php else: ?>
       

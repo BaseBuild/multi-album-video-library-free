@@ -96,7 +96,7 @@ function mavl_generate_request($param) {
   $valid_param = array();
 
   // Add Custom Parameters from Plugin Options
-  $per_page = get_option( 'mavl_items_per_page' ); // Plugin options "Items Per Page"
+  $per_page = 6;
   if( isset($per_page) ) $valid_param['per_page'] = $per_page; // Add per_page option. Exclude on single video request
 
   foreach ($albums_GET_valid_param as $p)
