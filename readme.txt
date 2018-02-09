@@ -1,10 +1,13 @@
 === BaseBuild: Multi Album Video Library Plugin ===
 Contributors: basebuild, beauxinc
+Donate link: http://www.basebuildguys.com/
 Tags: multi-video, album, videos, video gallery, galleries, video albums
-Requires at least: 3.1
+Requires at least: 4.0
 Tested up to: 4.9.4
-Stable tag: 1.3
-License: GPL3
+Stable tag: 4.0
+Requires PHP: 5.2.4
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
  
 This plugin enables you to display your Vimeo videos in an albums-grouped video gallery.
  
@@ -37,3 +40,23 @@ Yes, this plugin works with WordPress 3.1 and above.
  
 = How can we contact you guys? =
 Feel free to email us at contact@basebuildguys.com or learn more at http://www.basebuildguys.com/blog/how-to-create-an-online-video-library-with-vimeo-not-youtube/
+
+== Screenshots ==
+
+1. The albums page on our site at BaseBuildGuys.com. How it looks may differs on your theme style.
+
+2. The album page showing videos. It shows 6 videos per page.
+
+3. The video page.
+
+4. The plugin settings page on WordPress Dashboard.
+
+== Changelog ==
+
+= 1.0 =
+* Initial setup.
+
+== Upgrade Notice ==
+
+= 1.0 =
+No upgrade yet.
