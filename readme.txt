@@ -1,5 +1,5 @@
 === BaseBuild: Multi Album Video Library Plugin ===
-Contributors: basebuild, beauxinc
+Contributors: basebuild
 Donate link: http://www.basebuildguys.com/
 Tags: multi-video, album, videos, video gallery, galleries, video albums
 Requires at least: 4.0
